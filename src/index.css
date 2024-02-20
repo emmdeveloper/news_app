@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .section {
+    padding-block: 5rem 1rem;
+  }
+  .wrapper {
+    max-width: 1150px;
+    margin-inline: 1.5rem;
+  }
+  @media screen and (min-width: 1150px) {
+    .wrapper {
+      margin-inline: auto;
+    }
+    .section {
+      padding-block: 7rem 2rem;
+    }
+  }
+  .navMenu {
+    position: fixed;
+    height: 9999px;
+    top: 0;
+    z-index: 100;
+    right: 0;
+    padding: 5rem 0 0 3.5rem;
+    width: 75%;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
